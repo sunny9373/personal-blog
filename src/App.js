@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import TopBar from "./components/topbar";
+import BlogPost from "./components/BlogPost";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TopBar />
+
+      <div className="blog-posts">
+        <BlogPost title="SHASHANK" date="May 31, 2024" author="KJ">
+          <p>Loyalist college</p>
+        </BlogPost>
+        <BlogPost title="Sunny" date="June 1, 2024" author="Raze">
+          <p>Srinidhi college</p>
+        </BlogPost>
+        <BlogPost title="Sage" date="June 2, 2024" author="jjk">
+          <p> Lorem ipsum</p>
+        </BlogPost>
+        <BlogPost title="Roni" date="June 3, 2024" author="luffy">
+          <p>Dunks</p>
+        </BlogPost>
+      </div>
     </div>
   );
 }
